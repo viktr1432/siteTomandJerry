@@ -1,0 +1,16 @@
+.Footer{
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-area: Footer;
+    background: rgb(120, 232, 240);
+    min-height: 10px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    
+} 
+
+.Footer.Cosial {
+    padding: 10px 0;
+}
