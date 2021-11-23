@@ -6,13 +6,11 @@ import Conteiners from "./comanents/Conteiners";
 
 const App = () => {
   return (
-    // <Route>
     <>
       <div className="BlockContent">
         <Conteiners />
       </div>
     </>
-    // </Route>
   );
 };
 
