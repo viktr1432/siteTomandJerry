@@ -1,14 +1,16 @@
 import React from "react";
 import imgName from "../../../assets/img/img.png";
 import imgName2 from "../../../assets/img/img2.png";
+import imgName3 from '../../../assets/img/img3.png';
+import imgName4 from '../../../assets/img/img4.png';
 import clases from "./SiteBarMenu.module.css";
 
-const SiteBarMeny = () => {
+const SiteBarMeny = (props) => {
   return (
     <div>
       <button className="SiteBarMeny" href="#">
         <div className="SiteBarIcons">
-          {" "}
+          
           <img src={imgName} className={clases.imgIcon} />
         </div>
         <div className="SiteBarMenyT">груминг</div>
@@ -16,7 +18,7 @@ const SiteBarMeny = () => {
 
       <button className="SiteBarMeny" href="#">
         <div className="SiteBarIcons">
-          {" "}
+          
           <img src={imgName2} className={clases.imgIcon} />
         </div>
         <div className="SiteBarMenyT">прайс</div>
@@ -24,9 +26,9 @@ const SiteBarMeny = () => {
 
       <button className="SiteBarMeny" href="#">
         <div className="SiteBarIcons">
-          {" "}
+         
           <img
-            src="https://image.flaticon.com/icons/png/512/964/964016.png"
+            src={imgName3} className={clases.imgIcon}
             alt=""
             width="30"
           />
@@ -36,9 +38,9 @@ const SiteBarMeny = () => {
 
       <button className="SiteBarMeny" href="#">
         <div className="SiteBarIcons">
-          {" "}
+          
           <img
-            src="https://w7.pngwing.com/pngs/871/595/png-transparent-customer-review-information-others-hand-service-logo.png"
+            src={imgName4} className={clases.imgIcon}
             alt=""
             width="30"
           />

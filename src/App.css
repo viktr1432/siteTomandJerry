@@ -4,11 +4,12 @@
   max-width: 100%;
   height: auto;
   background: #b3b3ff;
-  overflow-x: hidden;
+
 }
 
 /*---- Conteiners-----------------*/
 .Conteiners {
+  position: relative;
   display: grid;
   grid-template-areas:
     "Heder Heder Heder"
@@ -18,35 +19,40 @@
   grid-template-columns: 1fr 6fr 1fr;
   gap: 5px;
 }
+
 /*---- Heder-----------------*/
 .Heder {
   width: 100%;
   margin: 0 auto;
   grid-area: Heder;
   background: rgb(200, 200, 201);
-
+  top: 100px;
   height: auto;
   min-height: 35px;
 }
+
 .HederCont {
   display: flex;
   justify-content: center;
   background-color: #c9fbfd;
   padding: 0 30px;
 }
+
 .Heder img {
   margin: 0 auto;
   width: 200px;
   align-items: center;
 }
+
 /*---- SiteBar-----------------*/
 .SiteBar {
+  position: sticky;
+   top: 100px;
   grid-area: SiteBar;
-
   margin: 0 auto;
   min-width: 150px;
-  height: auto;
-  background: rgb(151, 149, 149);
+
+  border: 1px solid red;
   align-items: center;
 }
 
@@ -66,10 +72,12 @@
   padding: 5px 10px;
   background: hsl(0, 0%, 91%);
 }
+
 .SiteBarMeny:hover {
   border: 1px solid red;
   opacity: 1;
 }
+
 .SiteBarIcons {
   padding: 0 15px 0 0;
   width: 30px;
@@ -81,13 +89,7 @@
   text-transform: uppercase;
   padding: 0 3px 0 0;
 }
-/*---- BlokInfo-----------------*/
 
-/*---- BlokRite-----------------*/
-
-/*---- Footer-----------------*/
-
-/*---- COSIAL-----------------*/
 
 .Cosialicons {
   padding: 30px 3px;
@@ -104,6 +106,7 @@
   text-transform: uppercase;
   text-align: center;
 }
+
 .ClassTvari {
   width: 400px;
 }
@@ -117,8 +120,16 @@
   color: rgb(7, 0, 0);
   width: 380px;
 }
+
 .PriceConteyBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.BlocFotoItem {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 4px;
 }
