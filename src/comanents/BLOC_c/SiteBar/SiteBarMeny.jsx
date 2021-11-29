@@ -6,14 +6,14 @@ import imgName4 from '../../../assets/img/img4.png';
 import imgName5 from '../../../assets/img/img5.png';
 import clases from "./SiteBarMenu.module.css";
 
-const SiteBarMeny = (props) => {
+const SiteBarMeny = () => {
   return (
     <div>
       <button className="SiteBarMeny" >
         <div className="SiteBarIcons">
           <img src={imgName5} className={clases.imgIcon} />
         </div>
-        <a  className="SiteBarMenyT" href='/BlokInfo'>главная</a>
+        <a className="SiteBarMenyT" href='/'>главная</a>
       </button>
 
 
@@ -23,7 +23,7 @@ const SiteBarMeny = (props) => {
         <div className="SiteBarIcons">
           <img src={imgName} className={clases.imgIcon} />
         </div>
-        <a href='/Price' className="SiteBarMenyT">груминг</a>
+        <a href='/' className="SiteBarMenyT">груминг</a>
       </button>
 
 
@@ -34,7 +34,7 @@ const SiteBarMeny = (props) => {
 
           <img src={imgName2} className={clases.imgIcon} />
         </div>
-        <a href="/Page2" className="SiteBarMenyT">прайс</a>
+        <a href="/" className="SiteBarMenyT">прайс</a>
       </button>
 
       <button className="SiteBarMeny" >
@@ -46,7 +46,7 @@ const SiteBarMeny = (props) => {
             width="30"
           />
         </div>
-        <a className="SiteBarMenyT" href="/Page33" >галерея</a>
+        <a className="SiteBarMenyT" href="/" >галерея</a>
       </button>
 
       <button className="SiteBarMeny" >
@@ -58,7 +58,7 @@ const SiteBarMeny = (props) => {
             width="30"
           />
         </div>
-        <a className="SiteBarMenyT" href="Page4">отзывы</a>
+        <a className="SiteBarMenyT" href="/">отзывы</a>
       </button>
 
 

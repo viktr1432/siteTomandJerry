@@ -13,8 +13,7 @@ const Conteiners = () => {
             <Heder />
             <SiteBar />
             <div>
-            <BlokInfoPage />
-            <Route path='BlokInfo' component={BlokInfo}/>
+                <BlokInfoPage />
             </div>
             <BlokFoto />
             <Footer />
