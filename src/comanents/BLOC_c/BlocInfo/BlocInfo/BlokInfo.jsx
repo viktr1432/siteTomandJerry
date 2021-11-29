@@ -1,5 +1,5 @@
 import React from "react";
-import Price from "../../Price/Price.jsx";
+
 import clases from './BlockInfo.module.css';
 
 const BlokInfo = () => {
@@ -18,7 +18,7 @@ const BlokInfo = () => {
             избавление от кожных паразитов;<br />
             удаление колтунов, которые могут вызвать проблемы со здоровьем собаки, такие как раздражение кожи или попадание вредных бактерий в шёрстный покров собаки.
 
-            <Price/>
+           
 
         </div>
     );

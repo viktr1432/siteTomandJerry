@@ -84,10 +84,12 @@
 }
 
 .SiteBarMenyT {
+  color: darkblue;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
   padding: 0 3px 0 0;
+  text-decoration: none;
 }
 
 
@@ -133,3 +135,4 @@
   justify-content: space-between;
   padding: 4px 4px;
 }
+
