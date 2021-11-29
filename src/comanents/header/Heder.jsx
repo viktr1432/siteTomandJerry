@@ -5,7 +5,7 @@ import HeaderCont from './HederCont';
 const Heder = () => {
     return (
         <div className='Heder'>
-            
+
             <HeaderCont />
         </div>
     );
