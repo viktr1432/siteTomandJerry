@@ -5,6 +5,16 @@ import ReviewsGrup from "./ReviewsGrup/ReviewsGrup";
 
 
 const Reviews = (props) => {
+    let ReviewsGrupData = [
+        {id: 1, massedges: 'приввет как дела'},
+        {id: 2, massedges: 'приввет как дела efw '},
+        {id: 3, massedges: 'приввет как дела rr  rr refw '},
+        
+    ]
+
+    let ReviewsGrupElements = ReviewsGrupData
+    .map ((reviews) => <ReviewsGrup massedges={reviews.massedges}/>);
+
     return (
         <div className={clases.Reviews} >
             <div>
@@ -17,8 +27,8 @@ const Reviews = (props) => {
 
             <div>
 
-                <ReviewsGrup massedges1='хочу оставить отзыв' />
-                <ReviewsGrup massedges1='хочу отзыв'/>
+            {ReviewsGrupElements} 
+                {/* <ReviewsGrup massedges={ReviewsGrupData [1].massedges}/> */}
                 
             </div>
         </div>

@@ -6,7 +6,6 @@ import ImgSm from '../../assets/img/sm.png';
 const DialogItem = (props) => {
 
     let path = "/Dialogs/" + props.id;
-
     return (
         <div className={clases.Dialog + " " + clases.active}>
             <img src={ImgSm} className={clases.imgIcon} alt="" />
@@ -33,7 +32,9 @@ const Dialogs = (props) => {
         { id: 4, name: 'Jora' },
         { id: 5, name: 'Lena' },
         { id: 6, name: 'Liza' },
+        { id: 7, name: 'Lera' },
     ]
+    
     let massedesData = [
         { id: 1, massedes: 'Alex' },
         { id: 2, massedes: 'Ale' },
@@ -41,6 +42,7 @@ const Dialogs = (props) => {
         { id: 4, massedes: 'Alerh ' },
 
     ]
+
 
     return (
         <div className={clases.Dialogs}>
@@ -52,7 +54,7 @@ const Dialogs = (props) => {
                 <DialogItem name={DialogsData[3].name} id={DialogsData[3].id} />
                 <DialogItem name={DialogsData[4].name} id={DialogsData[4].id} />
                 <DialogItem name={DialogsData[5].name} id={DialogsData[5].id} />
-
+                <DialogItem name={DialogsData[6].name} id={DialogsData[6].id} />
                 {/* <DialogItem id='6' name='Liza' /> */}
 
             </div>
