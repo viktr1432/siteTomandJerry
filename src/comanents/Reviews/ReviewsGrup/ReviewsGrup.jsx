@@ -9,10 +9,9 @@ const ReviewsGrup = (props) => {
 
         <div className={clases.ReviewsGrup} >
 
-            <Client />
-            {props.massedges}
+            <Client ClientRevievs={props.ClientRevievs}/>
+            
 
-            {props.massedges}
         </div>
 
 

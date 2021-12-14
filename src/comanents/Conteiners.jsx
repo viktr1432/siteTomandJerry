@@ -7,12 +7,12 @@ import BlokFoto from './BLOC_c/BlocInfo/BlockFoto/BlocFoto'
 import Footer from './footer/Footer';
 
 
-const Conteiners = () => {
+const Conteiners = (props) => {
     return (
         <div className='Conteiners'>
             <Heder />
             <SiteBar />
-            <BlocPage/>
+            <BlocPage ClientRevievs={props.ClientRevievs}/>
             <BlokFoto />
             <Footer />
         </div>

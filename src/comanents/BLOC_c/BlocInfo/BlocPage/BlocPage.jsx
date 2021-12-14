@@ -8,7 +8,7 @@ import Reviews from './../../../Reviews/Reviews';
 import Dialogs from "../../../Dialog/Dialogs";
 import { Route, Routes } from "react-router-dom";
 
-const BlocPage = () => {
+const BlocPage = (props) => {
 
     return (
 
@@ -22,7 +22,7 @@ const BlocPage = () => {
                     <Route  path="/Grum/" element={<Grum />} />
                     <Route  path="/Price/" element={<Price />} />
                     <Route  path="/Galereya/" element={<Galereya />} />
-                    <Route  path="/Reviews/" element={<Reviews />} />
+                    <Route  path="/Reviews/" element={<Reviews ClientRevievs= {props.ClientRevievs} />} />
                     <Route  path="/Dialogs/" element={<Dialogs />} />
 
                 </Routes>

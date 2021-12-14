@@ -16,6 +16,7 @@ const DialogItem = (props) => {
 }
 const Massedes = (props) => {
     
+
     return (
         <div className={clases.messade}>
             {props.massedes}
@@ -25,6 +26,13 @@ const Massedes = (props) => {
 
 
 const Dialogs = (props) => {
+    let massedesData = [
+        { id: 1, massedes: 'Alecscscx' },
+        { id: 2, massedes: 'Ale' },
+        { id: 3, massedes: 'Alevg gh' },
+        { id: 4, massedes: 'Alerh ' },
+
+    ]
     let DialogsData = [
         { id: 1, name: 'Alex' },
         { id: 2, name: 'Ale' },
@@ -34,16 +42,10 @@ const Dialogs = (props) => {
         { id: 6, name: 'Liza' },
         { id: 7, name: 'Lera' },
     ]
-    
-    let massedesData = [
-        { id: 1, massedes: 'Alex' },
-        { id: 2, massedes: 'Ale' },
-        { id: 3, massedes: 'Alevg gh' },
-        { id: 4, massedes: 'Alerh ' },
+    let massedesElement=massedesData
+    .map ((massedges)=><Massedes massedes={massedges.massedes} />)
 
-    ]
-
-
+   
     return (
         <div className={clases.Dialogs}>
 
@@ -55,21 +57,17 @@ const Dialogs = (props) => {
                 <DialogItem name={DialogsData[4].name} id={DialogsData[4].id} />
                 <DialogItem name={DialogsData[5].name} id={DialogsData[5].id} />
                 <DialogItem name={DialogsData[6].name} id={DialogsData[6].id} />
-                {/* <DialogItem id='6' name='Liza' /> */}
-
             </div>
 
 
 
 
             <div className={clases.messades}>
-
-
-                <Massedes massedes={massedesData[0].massedes} />
+            {massedesElement}
+                {/* <Massedes massedes={massedesData[0].massedes} />
                 <Massedes massedes={massedesData[1].massedes} />
                 <Massedes massedes={massedesData[2].massedes} />
-                <Massedes massedes={massedesData[3].massedes} />
-
+                <Massedes massedes={massedesData[3].massedes} /> */}
             </div>
 
         </div>
