@@ -74,8 +74,19 @@ const SiteBarMeny = () => {
         </div>
         <NavLink className="SiteBarMenyT" to="/Dialogs">ЧАТ</NavLink>
       </button>
+      <button className={clases.SiteBarMeny} >
+        <div className="SiteBarIcons">
 
+          <img
+            src={imgName6} className={clases.imgIcon}
+            alt=""
+            width="30"
+          />
+        </div>
+        <NavLink className="SiteBarMenyT" to="/Test1">test</NavLink>
+      </button>
     </div>
+    
   );
 };
 export default SiteBarMeny;

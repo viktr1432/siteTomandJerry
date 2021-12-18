@@ -7,6 +7,7 @@ import Galereya from './../../../Galereya/Galereya';
 import Reviews from './../../../Reviews/Reviews';
 import Dialogs from "../../../Dialog/Dialogs";
 import { Route, Routes } from "react-router-dom";
+import Test1 from "../../Test1/Test1";
 
 const BlocPage = (props) => {
 
@@ -14,23 +15,26 @@ const BlocPage = (props) => {
 
         <div className={clases.BlocInfoPage}>
 
-           
+
 
             <div>
                 <Routes>
-                    <Route  path="/" element={<BlokInfo />} />
-                    <Route  path="/Grum/" element={<Grum />} />
-                    <Route  path="/Price/" element={<Price />} />
-                    <Route  path="/Galereya/" element={<Galereya />} />
-                    <Route  path="/Reviews/" element={<Reviews ClientRevievs= {props.ClientRevievs} />} />
-                    <Route  path="/Dialogs/" element={<Dialogs massedesData={props.massedesData}
-                    DialogsData={props.DialogsData}/>} />
-                    <Route  path="/Dialogs/:id" element={<Dialogs massedesData={props.massedesData}
-                    DialogsData={props.DialogsData}/>} />
-
+                    <Route path="/" element={<BlokInfo />} />
+                    <Route path="/Grum/" element={<Grum />} />
+                    <Route path="/Price/" element={<Price />} />
+                    <Route path="/Galereya/" element={<Galereya />} />
+                    <Route path="/Reviews/" element={<Reviews ClientRevievs={props.ClientRevievs} />} />
+                    <Route path="/Dialogs/" element={<Dialogs massedesData={props.massedesData}
+                        DialogsData={props.DialogsData} />} />
+                    <Route path="/Dialogs/:id" element={<Dialogs massedesData={props.massedesData}
+                        DialogsData={props.DialogsData} />} />
+                    
+                </Routes>
+                <Routes>
+                <Route path="/Test1/" element={<Test1 />} />
                 </Routes>
             </div>
-            
+
         </div>
 
     );

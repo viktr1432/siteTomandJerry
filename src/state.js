@@ -27,6 +27,12 @@ let state={
         { id: 7, name: 'Lera' },
         { id: 8, name: 'Lerdd' },
       ]
+      test1Page:{
+        page1 [
+          {},
+        ]
+      }
+
 
 }
 export default state;

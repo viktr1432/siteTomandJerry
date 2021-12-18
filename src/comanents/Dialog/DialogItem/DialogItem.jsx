@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import clases from './../DialogItem/DialogItem.module.css';
 import ImgSm from '../../../assets/img/sm.png';
 
@@ -10,7 +10,7 @@ const DialogItem = (props) => {
     return (
         <div className={clases.DialogItem + " " + clases.active}>
             <img src={ImgSm} className={clases.imgIcon} alt="" />
-            <NavLink to={path}> {props.name} </NavLink>
+            <Link to={path}> {props.name} </Link>
         </div>
 
     )

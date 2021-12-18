@@ -28,7 +28,7 @@ const Reviews = (props) => {
 
                 <div>
                     <form>
-                        <label className="Label">
+                        <label className={clases.Reviews}>
                             <input type="text" name="name" />
                         </label>
                         {/* <input type="submit" value="Отправить" /> */}
