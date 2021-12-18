@@ -26,10 +26,11 @@ let state={
         
         { id: 7, name: 'Lera' },
         { id: 8, name: 'Lerdd' },
-      ]
+      ],
+
       test1Page:{
-        page1 [
-          {},
+        page1 :[
+          {id:1, Ab:'a1'}
         ]
       }
 
