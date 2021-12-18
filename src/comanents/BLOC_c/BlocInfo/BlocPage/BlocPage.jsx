@@ -13,21 +13,15 @@ const BlocPage = (props) => {
     return (
 
         <div className={clases.BlocInfoPage}>
-
-           
-
-            <div>
-                <Routes>
-                    <Route  path="/" element={<BlokInfo />} />
-                    <Route  path="/Grum/" element={<Grum />} />
-                    <Route  path="/Price/" element={<Price />} />
-                    <Route  path="/Galereya/" element={<Galereya />} />
-                    <Route  path="/Reviews/" element={<Reviews ClientRevievs= {props.ClientRevievs} />} />
-                    <Route  path="/Dialogs/" element={<Dialogs />} />
-
-                </Routes>
-            </div>
-            
+            <Routes>
+                <Route path="/" element={<BlokInfo />} />
+                <Route path="/Grum/" element={<Grum />} />
+                <Route path="/Price/" element={<Price />} />
+                <Route path="/Galereya/" element={<Galereya />} />
+                <Route path="/Reviews/" element={<Reviews ClientRevievs={props.ClientRevievs} />} />
+                <Route path="/dialogs/" element={<Dialogs />} />
+                <Route path="/dialogs/:id" element={<Dialogs />} />
+            </Routes>
         </div>
 
     );

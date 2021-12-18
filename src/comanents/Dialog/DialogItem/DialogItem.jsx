@@ -5,12 +5,12 @@ import ImgSm from '../../../assets/img/sm.png';
 
 const DialogItem = (props) => {
 
-    let path = "/Dialogs/"+props.id;
+    let path = "/Dialogs/" + props.id;
 
     return (
         <div className={clases.DialogItem + " " + clases.active}>
             <img src={ImgSm} className={clases.imgIcon} alt="" />
-            <NavLink to={path}> {props.name} </NavLink>
+            <NavLink to={path}>{props.name}</NavLink>
         </div>
 
     )

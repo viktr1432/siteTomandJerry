@@ -7,15 +7,11 @@ const BlokInfo = (props) => {
     return (
 
         <div class={clases.BlokInfo}>
-
-
             <div className='BlokInfoFoto' >
                 <img src={imgTomJerry} alt="" />
             </div>
+        </div>
 
-            
-            </div>
-
-            );
+    );
 }
-            export default BlokInfo;
+export default BlokInfo;
