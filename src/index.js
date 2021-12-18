@@ -4,16 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import state from './../src/state.js'
 
-let ClientRevievs =[
-  {id: 1,  ClientReviev: 'спасибо? были у вас в прощсе отлично'},
-  
-      ]
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App ClientRevievs={ClientRevievs}/>
+      <App state={state}  />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

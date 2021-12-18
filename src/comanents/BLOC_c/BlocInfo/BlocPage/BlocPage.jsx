@@ -23,7 +23,10 @@ const BlocPage = (props) => {
                     <Route  path="/Price/" element={<Price />} />
                     <Route  path="/Galereya/" element={<Galereya />} />
                     <Route  path="/Reviews/" element={<Reviews ClientRevievs= {props.ClientRevievs} />} />
-                    <Route  path="/Dialogs/" element={<Dialogs />} />
+                    <Route  path="/Dialogs/" element={<Dialogs massedesData={props.massedesData}
+                    DialogsData={props.DialogsData}/>} />
+                    <Route  path="/Dialogs/:id" element={<Dialogs massedesData={props.massedesData}
+                    DialogsData={props.DialogsData}/>} />
 
                 </Routes>
             </div>

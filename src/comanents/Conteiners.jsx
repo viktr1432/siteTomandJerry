@@ -12,7 +12,8 @@ const Conteiners = (props) => {
         <div className='Conteiners'>
             <Heder />
             <SiteBar />
-            <BlocPage ClientRevievs={props.ClientRevievs}/>
+            <BlocPage ClientRevievs={props.ClientRevievs} massedesData={props.massedesData}
+            DialogsData={props.DialogsData}/>
             <BlokFoto />
             <Footer />
         </div>

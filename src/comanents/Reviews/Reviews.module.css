@@ -24,3 +24,14 @@ text-align: center;
     padding: 10px;
     box-shadow: 1px red;
 }
+.Reviews select{
+    margin: 0 5px 10px 25px;
+    padding:5px;
+}
+.Reviews h4{
+    margin: 5px 0 10px 25px;
+    padding-bottom:5px;
+}
+.Label{
+padding: 10px;
+}
