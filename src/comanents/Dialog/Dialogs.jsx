@@ -16,7 +16,7 @@ import DialogItem from "./DialogItem/DialogItem";
 //     )
 // }
 const Massedes = (props) => {
-    
+
 
     return (
         <div className={clases.messade}>
@@ -27,31 +27,33 @@ const Massedes = (props) => {
 
 
 const Dialogs = (props) => {
-   
-    
-    let massedesElement=props.massedesData
-    .map ((massedges)=><Massedes massedes={massedges.massedes} />)
 
-    let DialogsElenent=props.DialogsData
-    .map ((Dialog)=><DialogItem name={Dialog.name} id={Dialog.id} />)
 
-   
+    let massedesElement = props.massedesData
+        .map((massedges) => <Massedes massedes={massedges.massedes} />)
+
+    let DialogsElenent = props.DialogsData
+        .map((Dialog) => <DialogItem name={Dialog.name} id={Dialog.id} />)
+
+
     return (
         <div className={clases.Dialogs}>
 
             <div className={clases.DialogItems}>
-            {DialogsElenent}
+                {DialogsElenent}
                 {/* <DialogItem name={DialogsData[0].name} id={DialogsData[0].id} />
                 <DialogItem name={DialogsData[1].name} id={DialogsData[1].id} />
                  */}
             </div>
 
             <div className={clases.messades}>
-            {massedesElement}
-            <div>
-               <textarea name="" id="" cols="30" rows="5"></textarea>
-               <div><button>отправить сообщение</button></div>
-               </div>
+                {massedesElement}
+                <div>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <div>
+                        <button>отправить сообщение</button>
+                    </div>
+                </div>
             </div>
 
         </div>
