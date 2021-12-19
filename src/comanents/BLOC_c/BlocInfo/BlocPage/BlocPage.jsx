@@ -32,6 +32,7 @@ const BlocPage = (props) => {
                 </Routes>
                 <Routes>
                 <Route path="/Test1/" element={<Test1 />} />
+               
                 </Routes>
             </div>
 

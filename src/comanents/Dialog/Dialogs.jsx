@@ -46,14 +46,12 @@ const Dialogs = (props) => {
                  */}
             </div>
 
-
-
-
             <div className={clases.messades}>
             {massedesElement}
-                {/* <Massedes massedes={massedesData[0].massedes} />
-                <Massedes massedes={massedesData[1].massedes} />
-                */}
+            <div>
+               <textarea name="" id="" cols="30" rows="5"></textarea>
+               <div><button>отправить сообщение</button></div>
+               </div>
             </div>
 
         </div>
