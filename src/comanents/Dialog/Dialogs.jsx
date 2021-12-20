@@ -28,6 +28,12 @@ const Massedes = (props) => {
 
 const Dialogs = (props) => {
 
+    let Ad = React.createRef();
+
+    let testText = () => {
+        let addText = Ad.current.value;
+        alert(addText);
+    }
 
     let massedesElement = props.massedesData
         .map((massedges) => <Massedes massedes={massedges.massedes} />)
@@ -49,9 +55,9 @@ const Dialogs = (props) => {
             <div className={clases.messades}>
                 {massedesElement}
                 <div>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <textarea ref={Ad}> </textarea>
                     <div>
-                        <button>отправить сообщение</button>
+                        <button onClick={testText}>отправить сообщение</button>
                     </div>
                 </div>
             </div>

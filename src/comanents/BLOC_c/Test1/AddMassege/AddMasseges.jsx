@@ -5,11 +5,10 @@ import AddLogoMasseges from "./AddLogoMasseges/AddLogoMasseges";
 
 import imgTest from './../../../../assets/img/len.jpg'
 
-let FotoT=<img src={imgTest} alt="" />
 
 const AddMasseges=(props)=>{
    let testmassegeData=[
-{id:1, testmassege:'ghgfwe fef ef ew hghgh', fotoTest:{FotoT}},
+{id:1, testmassege:'ghgfwe fef ef ew hghgh',},
 
     ] 
 

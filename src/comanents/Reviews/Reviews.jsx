@@ -6,8 +6,12 @@ import ReviewsGrup from "./ReviewsGrup/ReviewsGrup";
 
 const Reviews = (props) => {
 
-
-
+    let Text = React.createRef();
+    let Text1 = () => {
+        let t = Text.current.value;
+        alert(t);
+    }
+    
 
 
     return (
@@ -16,31 +20,30 @@ const Reviews = (props) => {
                 <h2>Отзывы о наших работах</h2>
                 <div>
                     <h4>Ваш питомец</h4>
-
-                    <select name="" id="">
-                        <option value="cet">cet</option>
-                        <option selected value="dog">dog</option>
-                        <option value="mug">mustang</option>
-                    </select>
-
-
+                    <div>
+                        <select >
+                            <option value="cet">cet</option>
+                            <option selected value="dog">dog</option>
+                            <option value="mug">mustang</option>
+                        </select>
+                        
+                    </div>
                 </div>
 
                 <div>
-                    <form>
+                    <form >
                         <label className={clases.Reviews}>
-                            <input type="text" name="name" />
+                            <input />
                         </label>
-                        {/* <input type="submit" value="Отправить" /> */}
+                        <button >OK</button>
                     </form>
                 </div>
 
-
-                <textarea></textarea>
+                <textarea ref={Text}></textarea>
             </div>
 
             <div>
-                <button>добавить <br /> отзыв</button>
+                <button onClick={Text1}>добавить <br /> отзыв</button>
             </div>
             <ReviewsGrup ClientRevievs={props.ClientRevievs} />
         </div>
