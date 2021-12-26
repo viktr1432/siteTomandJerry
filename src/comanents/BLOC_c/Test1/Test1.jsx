@@ -14,17 +14,13 @@ const Test1 = (props) => {
     return (
         <div className={clases.Test1}>
             <div> <textarea ref={AddMassegeg} ></textarea>
-
                 <div>
                     <button onClick={Addtext} >add</button>
                 </div>
-
             </div>
-
-            <div></div>
+            
             <Abonent />
-            <AddMasseges />
-
+            <AddMasseges testmassegeData={props.testmassegeData}/>
         </div>
     )
 }

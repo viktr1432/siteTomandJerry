@@ -8,6 +8,7 @@ import Reviews from './../../../Reviews/Reviews';
 import Dialogs from "../../../Dialog/Dialogs";
 import { Route, Routes } from "react-router-dom";
 import Test1 from "../../Test1/Test1";
+import Test2 from "../../..//Test2/Test2";
 
 const BlocPage = (props) => {
 
@@ -28,11 +29,11 @@ const BlocPage = (props) => {
                         DialogsData={props.DialogsData} />} />
                     <Route path="/Dialogs/:id" element={<Dialogs massedesData={props.massedesData}
                         DialogsData={props.DialogsData} />} />
-                    
+
                 </Routes>
                 <Routes>
-                <Route path="/Test1/" element={<Test1 />} />
-               
+                    <Route path="/Test1/" element={<Test1 testmassegeData={props.testmassegeData}/>} />
+                    <Route path="/Test2/" element={<Test2 GrumTebl={props.GrumTebl} addGrumTebl={props.addGrumTebl}/>} />
                 </Routes>
             </div>
 

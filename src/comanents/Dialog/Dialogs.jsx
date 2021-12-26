@@ -1,7 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import clases from '../Dialog/Dialogs.module.css';
-import ImgSm from '../../assets/img/sm.png';
 import DialogItem from "./DialogItem/DialogItem";
 
 // const DialogItem = (props) => {
@@ -47,9 +45,6 @@ const Dialogs = (props) => {
 
             <div className={clases.DialogItems}>
                 {DialogsElenent}
-                {/* <DialogItem name={DialogsData[0].name} id={DialogsData[0].id} />
-                <DialogItem name={DialogsData[1].name} id={DialogsData[1].id} />
-                 */}
             </div>
 
             <div className={clases.messades}>
@@ -61,6 +56,7 @@ const Dialogs = (props) => {
                     </div>
                 </div>
             </div>
+
 
         </div>
     )

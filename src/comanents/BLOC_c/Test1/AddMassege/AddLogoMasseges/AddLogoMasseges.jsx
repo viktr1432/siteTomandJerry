@@ -9,8 +9,7 @@ import clases from './AdLog.module.css'
 const AddLogoMasseges = (props) => {
     return (<div>
         <div className={clases.AdLog}>
-            <img src={imgin} alt="" /> {props.testmassege }{props.fotoTest}
-
+            <img src={imgin} alt="" /> {props.testmassege}
         </div>
     </div>
     );

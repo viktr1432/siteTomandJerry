@@ -1,27 +1,17 @@
 import React from "react";
 import clases from './AddMasseges.module.css'
-
 import AddLogoMasseges from "./AddLogoMasseges/AddLogoMasseges";
 
-import imgTest from './../../../../assets/img/len.jpg'
 
+const AddMasseges = (props) => {
 
-const AddMasseges=(props)=>{
-   let testmassegeData=[
-{id:1, testmassege:'ghgfwe fef ef ew hghgh',},
+   let testMesElement = props.testmassegeData
+      .map((mas) => <AddLogoMasseges testmassege={mas.testmassege} id={mas.id} />)
 
-    ] 
-
-  let testMesElement =testmassegeData
-  .map ((mas)=> <AddLogoMasseges testmassege={mas.testmassege} id= {mas.id} fotoTest={mas.fotoTest}/>)
-
- return (
-<div className={clases.AddMasseges}>
-
-{testMesElement}
-
-
-    </div>
- );
+   return (
+      <div className={clases.AddMasseges}>
+         {testMesElement}
+      </div>
+   );
 }
 export default AddMasseges;

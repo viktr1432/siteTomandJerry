@@ -20,7 +20,7 @@ const Abonent = (props) => {
     let AbData = [
         { id: 1, name: 'Lex' },
         { id: 2, name: 'Lexd' },
-        { id: 2, name: 'Lexd' },
+        { id: 3, name: 'Lexdf' },
     ]
     let AbElem = AbData.map((a) => <Ab name={a.name} id={a.id} />)
 
