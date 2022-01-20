@@ -7,31 +7,28 @@ import imgName4 from '../../../assets/img/img4.png';
 import imgName5 from '../../../assets/img/img5.png';
 import imgName6 from '../../../assets/img/img6.jpg';
 import imgL from './../../../assets/img/len.jpg';
-import clases from "./SiteBarMenu.module.css";
+import clases from "./SiteBarMenu.module.scss";
 import { NavLink } from "react-router-dom";
 
 const SiteBarMeny = () => {
   return (
     <div>
-      <button className={clases.SiteBarMeny} >
-        <div className="SiteBarIcons">
+
+      <NavLink className={clases.SiteBarMenyT} to='/'>
+        <div className={clases.siteBarIcon}>
           <img src={imgName5} className={clases.imgIcon} alt='' />
+          <span>главная</span>
         </div>
-        <NavLink className={clases.SiteBarMenyT} to='/'>главная</NavLink>
-      </button>
 
+      </NavLink>
 
-
-      <button className={clases.SiteBarMeny} >
-
-        <div className="SiteBarIcons">
-          <img src={imgName} className={clases.imgIcon} alt='' />
-        </div>
-        <NavLink to='/Grum' className={clases.SiteBarMenyT}>груминг</NavLink>
-      </button>
-
-
-
+      
+<NavLink to='/Grum' className={clases.SiteBarMenyT}>
+        <div className={clases.siteBarIcon}>
+          <img src={imgName} className={clases.imgIcon} alt='' /> 
+       <span>груминг</span> </div>
+</NavLink>
+     
 
       <button className={clases.SiteBarMeny} >
         <div className="SiteBarIcons">
@@ -41,7 +38,7 @@ const SiteBarMeny = () => {
         <NavLink to="/Price" className={clases.SiteBarMenyT}>прайс</NavLink>
       </button>
 
-      <button className={clases.SiteBarMeny} >
+      {/* <button className={clases.SiteBarMeny} >
         <div className="SiteBarIcons">
 
           <img
@@ -51,7 +48,7 @@ const SiteBarMeny = () => {
           />
         </div>
         <NavLink className={clases.SiteBarMenyT} to="/Galereya" >галерея</NavLink>
-      </button>
+      </button> */}
 
       <button className={clases.SiteBarMeny} >
         <div className="SiteBarIcons">
@@ -64,6 +61,9 @@ const SiteBarMeny = () => {
         </div>
         <NavLink className={clases.SiteBarMenyT} to="/Reviews">отзывы</NavLink>
       </button>
+
+
+
       <button className={clases.SiteBarMeny} >
         <div className="SiteBarIcons">
 
@@ -75,6 +75,8 @@ const SiteBarMeny = () => {
         </div>
         <NavLink className={clases.SiteBarMenyT} to="/Dialogs">ЧАТ</NavLink>
       </button>
+
+
       <button className={clases.SiteBarMeny} >
         <div className="SiteBarIcons">
 
@@ -86,6 +88,19 @@ const SiteBarMeny = () => {
         </div>
         <NavLink className={clases.SiteBarMenyT} to="/Test1">test</NavLink>
       </button>
+      {/* <button className={clases.SiteBarMeny} >
+        <div className="SiteBarIcons">
+
+          <img
+            src={imgL} className={clases.imgIcon}
+            alt=""
+            width="30"
+          />
+        </div>
+
+        <NavLink className={clases.SiteBarMenyT} to="/Test2">test2</NavLink>
+      </button> */}
+
       <button className={clases.SiteBarMeny} >
         <div className="SiteBarIcons">
 
@@ -95,13 +110,13 @@ const SiteBarMeny = () => {
             width="30"
           />
         </div>
-        <NavLink className={clases.SiteBarMenyT} to="/Test2">test2</NavLink>
+        <NavLink className={clases.SiteBarMenyT} to="/Test3">test3</NavLink>
       </button>
 
 
     </div>
 
-    
+
   );
 };
 export default SiteBarMeny;

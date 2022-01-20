@@ -1,22 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import store from "./state";
 import { BrowserRouter } from "react-router-dom";
-import state from './../src/state.js'
-import {addtestmassegeData} from './state';
-import {addGrumTebl} from './state';
+import state2 from './state2';
+import {subscribe2} from "./state2";
+import {addTextTest3, addtestDate} from "./state2";
 
-// addGrumTebl();
-addtestmassegeData( 'gdgdgdgfewf efewfef gd');
-
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App state={state} addGrumTebl={addGrumTebl}/>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
-reportWebVitals();
+let rerenderIntareTree = (state) => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <BrowserRouter>
+      
+        <App state={state}
+          state2={state2}
+          addGrumTebl={store.addGrumTebl}
+          addtestmassegeData={store.addtestmassegeData.bind(store)}
+          addtestDate={addtestDate}
+          addMessDialog={store.addMessDialog}
+          postRev={store.postRev}
+          nevTextTest1={store.nevTextTest1.bind(store)}
+          addTextTest3 ={addTextTest3}
+          
+        />
+      </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+}
+rerenderIntareTree(store.getState ())
+store.subscribe(rerenderIntareTree);
+subscribe2(rerenderIntareTree);

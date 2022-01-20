@@ -1,62 +1,92 @@
-let state = {
-  ClientRevievs: [
-    { id: 1, ClientReviev: 'спасибо? были у вас в прощсе отлично' },
+const store = {
+
+  state: {
 
 
-  ],
-  massedesData: [
-    { id: 1, massedes: 'Alecscscx' },
-    { id: 2, massedes: 'Ale' },
-    { id: 2, massedes: 'Alescscc' },
-    { id: 3, massedes: 'Alevg gh' },
-    
-  ],
+    ClientRevievs: [{ id: 1, ClientReviev: 'спасибо? были у вас в прощсе отлично' },],
 
-  DialogsData: [
-    { id: 1, name: 'Alexdgrg ' },
-    { id: 2, name: 'Alegr grt43t4t43tg' },
-    { id: 3, name: 'Vasgr egrggrgerg' },
-    
-  ],
+    massedesData: [
+      { id: 1, massedes: 'Alecscscx' },
+      { id: 2, massedes: 'чат' },
+    ],
 
-  GrumTebl: [
-    { id: 1, idClient: 'номер', nameClient: 'имя клиента', nameDog: 'кличка животного',
-     grumer: 'мастер', dateGrum: 'дата'},
-     { id: 2, idClient: '1', nameClient: 'Sveta', nameDog: 'tobik',
-     grumer: 'Liza', dateGrum: '12.15'},
-     { id: 3, idClient: '2', nameClient: 'Svetka', nameDog: '4mobik',
-     grumer: 'Liza', dateGrum: '13.15'},
-  ],
+    DialogsData: [
+      { id: 1, name: 'Alexdgrg ' },
+      { id: 2, name: 'Alegr grt43t4t43tg' },
+      { id: 3, name: 'Vasgr egrggrgerg' },
+    ],
 
-  
+    GrumTebl: [
+      {
+        id: 1, idClient: 'номер', nameClient: 'имя клиента', nameDog: 'кличка животного',
+        grumer: 'мастер', dateGrum: 'дата'
+      },
+      {
+        id: 2, idClient: '1', nameClient: 'Sveta', nameDog: 'tobik',
+        grumer: 'Liza', dateGrum: '12.15'
+      },
 
+    ],
 
+    addTest1: {
+      testmassegeData: [
+        { id: Math.random(), testmassege: 'строка сообщений тест 1', },
+      ],
+      nevTest1: ''
+    }
+  },
 
+  getState() {
+    return this.state;
+  },
 
-  testmassegeData:[
-    {id:1, testmassege:'ghgfwe ffefefefefef ef ew hghgh',},
-    {id:1, testmassege:'ghgfwe ',},
-           ] 
+  addtestmassegeData(text) {
+    let massege = {
+      id: Math.random(),
+      testmassege: text
+    }
+    this.state.addTest1.testmassegeData.push(massege)
+    this._collSubscriber(this.state)
+  },
+
+  nevTextTest1(text) {
+    this.state.addTest1.nevTest1 = text;
+
+    this._collSubscriber(this.state)
+  },
+
+  // addGrumTebl  (GrumTebl)  {
+
+  //   let bloc = {
+
+  //     id: 5,
+  //     idClient: GrumTebl,
+  //     nameClient: GrumTebl,
+  //     nameDog: GrumTebl,
+  //     grumer: GrumTebl,
+  //     dateGrum: GrumTebl,
+  //   }
+  //   this.state.GrumTebl.push(bloc)
+  // },
+  // postRev (ClientRevievs)  {
+
+  //   let postT = {
+  //     id: 3,
+  //     ClientReviev: ClientRevievs,
+  //   }
+  //   this.state.ClientRevievs.push(postT)
+  // },
+  // addMessDialog (massage)  {
+
+  //   let massegeDialog = {
+  //     id: 3,
+  //     massedes: massage,
+  //   }
+  //   this.state.massedesData.push(massegeDialog)
+  // },
+  subscribe(observer) {
+    this._collSubscriber = observer;
+  },
 }
 
-export let addtestmassegeData =(testmassege)=>{
-  let massege = {
-    id:3,
-    testmassege: testmassege
-  }
-  state.testmassegeData.push(massege)
-}
-
-export let addGrumTebl=(GrumTebl)=>{
-  let bloc ={
-    id: 5,
-    idClient: 'ном',
-    nameClient: 'имя клиеуанта', 
-    nameDog: 'кличка живоаууатного',
-    grumer: 'масуауатер',
-    dateGrum: 'дауауаата',
-  }
-state.GrumTebl.push(bloc)
-}
-
-export default state;
+export default store;

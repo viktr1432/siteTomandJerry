@@ -1,6 +1,6 @@
 import React from "react";
 import imgin from './../../../../../assets/img/inyn.png'
-import clases from './AdLog.module.css'
+import clases from './AdLog.module.scss'
 
 
 

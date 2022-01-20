@@ -9,7 +9,7 @@ const Reviews = (props) => {
     let Text = React.createRef();
     let Text1 = () => {
         let t = Text.current.value;
-        alert(t);
+        props.postRev(t);
     }
     
 

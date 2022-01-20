@@ -1,26 +1,33 @@
-import React from "react";
-import Abonent from "./Abonent/Abonent";
-import clases from './Test1.module.css';
+import React, { useState } from "react";
+import clases from './Test1.module.scss';
 import AddMasseges from "./AddMassege/AddMasseges";
 
 const Test1 = (props) => {
+    
 
-    let AddMassegeg = React.createRef();
+    let addMassegeg = React.createRef();
+    let addtext = () => {
+        props.addtestmassegeData(addMassegeg.current.value)
+        props.testmassegeData.nevTest1 = ''
+    }
 
-    let Addtext = () => {
-        let Text2 = AddMassegeg.current.value;
-        alert(Text2);
+    let onChengeMassege = () => {
+        props.nevTextTest1(addMassegeg.current.value)
+
     }
     return (
         <div className={clases.Test1}>
-            <div> <textarea ref={AddMassegeg} ></textarea>
+            <div>
+                <textarea onChange={onChengeMassege} ref={addMassegeg}
+                    placeholder="Введите текст" value={props.testmassegeData.nevTest1}></textarea>
                 <div>
-                    <button onClick={Addtext} >add</button>
+                    <button onClick={addtext}  >add</button>
                 </div>
             </div>
-            
-            <Abonent />
-            <AddMasseges testmassegeData={props.testmassegeData}/>
+
+            <AddMasseges testmassegeData={props.testmassegeData}
+
+            />
         </div>
     )
 }

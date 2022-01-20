@@ -1,5 +1,5 @@
 import React from "react";
-import clases from './Client.module.css'
+import clases from './Client.module.scss'
 import ClientFoto from "./clientfoto/ClientFoto";
 import ClientRevievs from "./ClientRevievs/ClientRevievs";
 

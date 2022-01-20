@@ -13,12 +13,28 @@ const Conteiners = (props) => {
         <div className={clases.Conteiners}>
             <Heder />
             <SiteBar />
-            <BlocPage ClientRevievs={props.ClientRevievs} massedesData={props.massedesData}
-            DialogsData={props.DialogsData} GrumTebl={props.GrumTebl} testmassegeData={props.testmassegeData}
-            addGrumTebl={props.addGrumTebl}/>
+            <BlocPage
+                ClientRevievs={props.ClientRevievs}
+                postRev={props.postRev}
+                massedesData={props.massedesData}
+                DialogsData={props.DialogsData}
+                GrumTebl={props.GrumTebl}
+                testmassegeData={props.testmassegeData}
+                addGrumTebl={props.addGrumTebl}
+                addtestmassegeData={props.addtestmassegeData}
+                onChengeMasse={props.testmassegeData.onChengeMasse}
+                MassegeTest3Data={props.MassegeTest3Data}
+                testvDate={props.testvDate}
+                addtestDate={props.addtestDate}
+                addMessDialog ={props.addMessDialog}
+                nevTextTest1={props.nevTextTest1}
+                addTextTest3={props.addTextTest3}
+                test3OnText={props.test3OnText}
+            />
+
             <BlokFoto />
             <Footer />
-            
+
         </div>
 
     );

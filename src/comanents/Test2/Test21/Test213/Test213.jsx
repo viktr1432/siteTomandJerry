@@ -1,5 +1,5 @@
 import React from "react";
-import c from './test213.module.css'
+import c from './test213.module.scss'
 
 const Test213 = (props) => {
 

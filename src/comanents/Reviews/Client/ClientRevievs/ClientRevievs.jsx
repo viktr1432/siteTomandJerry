@@ -1,5 +1,5 @@
 import React from "react";
-import clases from '../ClientRevievs/ClientRevievs.module.css'
+import clases from '../ClientRevievs/ClientRevievs.module.scss'
 
 const ClientRevievsR =(props)=>{
     return (

@@ -29,8 +29,10 @@ const Dialogs = (props) => {
     let Ad = React.createRef();
 
     let testText = () => {
+        
         let addText = Ad.current.value;
-        alert(addText);
+        props.addMessDialog(addText);
+        Ad.current.value='';
     }
 
     let massedesElement = props.massedesData
